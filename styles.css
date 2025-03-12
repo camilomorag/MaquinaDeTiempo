@@ -750,3 +750,22 @@ footer {
   }
 }
 
+/* Estilos para la sección de video */
+#video-presentacion {
+  margin-top: 30px;
+}
+
+.video-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.video-container video {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+}
+
