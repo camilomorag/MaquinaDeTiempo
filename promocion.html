@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Máquina del Tiempo</title>
+    <title>Promoción - Máquina del Tiempo</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600&display=swap">
 </head>
@@ -21,26 +21,45 @@
 
     <nav>
         <ul>
-            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="producto.html">Sobre el producto</a></li>
             <li><a href="branding.html">Diseño y Branding</a></li>
             <li><a href="caracteristicas.html">Características</a></li>
             <li><a href="precio.html">Precio</a></li>
-            <li><a href="promocion.html">Promoción</a></li>
+            <li><a href="promocion.html" class="active">Promoción</a></li>
             <li><a href="minijuego.html">Minijuego</a></li>
         </ul>
     </nav>
 
-    <section id="inicio" class="glow-section">
-        <h2>Descubre el Futuro del Viaje en el Tiempo</h2>
-        <p>Explora nuestra innovadora tecnología de viajes temporales, diseñada para romper las barreras del espacio-tiempo y abrir nuevas posibilidades para la humanidad.</p>
-        <div class="time-machine-visual">
-            <div class="machine-core"></div>
-            <div class="machine-ring ring1"></div>
-            <div class="machine-ring ring2"></div>
-            <div class="machine-ring ring3"></div>
+    <section id="promocion" class="glow-section">
+        <h2>Promoción y Marketing</h2>
+        <div class="promo-content">
+            <p>Nuestra estrategia de promoción abarca múltiples épocas y dimensiones para garantizar la máxima visibilidad de nuestro producto revolucionario:</p>
+            
+            <div class="promo-grid">
+                <div class="promo-item">
+                    <h3>Eventos Temporales</h3>
+                    <p>Demostraciones exclusivas en diferentes épocas históricas para inversores seleccionados.</p>
+                </div>
+                <div class="promo-item">
+                    <h3>Redes Sociales</h3>
+                    <p>Presencia activa en todas las plataformas digitales con testimonios de viajeros temporales certificados.</p>
+                </div>
+                <div class="promo-item">
+                    <h3>Programa de Embajadores</h3>
+                    <p>Figuras históricas seleccionadas promocionan nuestro producto a través del tiempo.</p>
+                </div>
+                <div class="promo-item">
+                    <h3>Experiencias Inmersivas</h3>
+                    <p>Centros de realidad virtual donde puedes simular viajes temporales antes de adquirir tu máquina.</p>
+                </div>
+            </div>
+            
+            <div class="testimonial">
+                <p>"Visitar el Renacimiento y conocer a Leonardo da Vinci cambió mi perspectiva sobre el arte. La máquina funcionó perfectamente, sin ninguna paradoja temporal."</p>
+                <span class="author">— Dr. Elena Martínez, Historiadora de Arte</span>
+            </div>
         </div>
-        <button class="glow-button" onclick="showAlert()">¡Descúbrela ahora!</button>
     </section>
 
     <footer>
@@ -70,22 +89,6 @@
             <p>&copy; 2025-∞ Máquina del Tiempo - Todos los derechos reservados en todas las líneas temporales.</p>
         </div>
     </footer>
-
-    <script>
-        function showAlert() {
-            alert("¡La Máquina del Tiempo está aquí! Prepárate para una experiencia que transformará tu percepción de la realidad.");
-        }
-
-        // Animación para los anillos de la máquina del tiempo
-        document.addEventListener('DOMContentLoaded', function() {
-            const rings = document.querySelectorAll('.machine-ring');
-            rings.forEach((ring, index) => {
-                setTimeout(() => {
-                    ring.classList.add('active');
-                }, index * 500);
-            });
-        });
-    </script>
 </body>
 </html>
 

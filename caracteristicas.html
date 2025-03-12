@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Máquina del Tiempo</title>
+    <title>Características - Máquina del Tiempo</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600&display=swap">
 </head>
@@ -21,26 +21,50 @@
 
     <nav>
         <ul>
-            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="producto.html">Sobre el producto</a></li>
             <li><a href="branding.html">Diseño y Branding</a></li>
-            <li><a href="caracteristicas.html">Características</a></li>
+            <li><a href="caracteristicas.html" class="active">Características</a></li>
             <li><a href="precio.html">Precio</a></li>
             <li><a href="promocion.html">Promoción</a></li>
             <li><a href="minijuego.html">Minijuego</a></li>
         </ul>
     </nav>
 
-    <section id="inicio" class="glow-section">
-        <h2>Descubre el Futuro del Viaje en el Tiempo</h2>
-        <p>Explora nuestra innovadora tecnología de viajes temporales, diseñada para romper las barreras del espacio-tiempo y abrir nuevas posibilidades para la humanidad.</p>
-        <div class="time-machine-visual">
-            <div class="machine-core"></div>
-            <div class="machine-ring ring1"></div>
-            <div class="machine-ring ring2"></div>
-            <div class="machine-ring ring3"></div>
+    <section id="caracteristicas" class="glow-section">
+        <h2>Características</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon interface"></div>
+                <h3>Interfaz Intuitiva</h3>
+                <p>Panel de control holográfico con reconocimiento de voz y gestos para una programación sencilla de tus viajes temporales.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon safety"></div>
+                <h3>Seguridad Cuántica</h3>
+                <p>Sistema de estabilización temporal que previene paradojas y garantiza tu seguridad en cualquier época.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon energy"></div>
+                <h3>Energía Sostenible</h3>
+                <p>Funciona con energía de punto cero, proporcionando potencia ilimitada para tus aventuras temporales.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon capacity"></div>
+                <h3>Capacidad Múltiple</h3>
+                <p>Espacio para hasta 4 viajeros con sistema de adaptación biológica para diferentes condiciones temporales.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon precision"></div>
+                <h3>Precisión Temporal</h3>
+                <p>Calibración exacta con margen de error de ±3 segundos por siglo de desplazamiento.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon memory"></div>
+                <h3>Memoria Temporal</h3>
+                <p>Almacena hasta 50 destinos temporales favoritos para regresar fácilmente a tus épocas preferidas.</p>
+            </div>
         </div>
-        <button class="glow-button" onclick="showAlert()">¡Descúbrela ahora!</button>
     </section>
 
     <footer>
@@ -70,22 +94,6 @@
             <p>&copy; 2025-∞ Máquina del Tiempo - Todos los derechos reservados en todas las líneas temporales.</p>
         </div>
     </footer>
-
-    <script>
-        function showAlert() {
-            alert("¡La Máquina del Tiempo está aquí! Prepárate para una experiencia que transformará tu percepción de la realidad.");
-        }
-
-        // Animación para los anillos de la máquina del tiempo
-        document.addEventListener('DOMContentLoaded', function() {
-            const rings = document.querySelectorAll('.machine-ring');
-            rings.forEach((ring, index) => {
-                setTimeout(() => {
-                    ring.classList.add('active');
-                }, index * 500);
-            });
-        });
-    </script>
 </body>
 </html>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Máquina del Tiempo</title>
+    <title>Diseño y Branding - Máquina del Tiempo</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600&display=swap">
 </head>
@@ -21,9 +21,9 @@
 
     <nav>
         <ul>
-            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="producto.html">Sobre el producto</a></li>
-            <li><a href="branding.html">Diseño y Branding</a></li>
+            <li><a href="branding.html" class="active">Diseño y Branding</a></li>
             <li><a href="caracteristicas.html">Características</a></li>
             <li><a href="precio.html">Precio</a></li>
             <li><a href="promocion.html">Promoción</a></li>
@@ -31,16 +31,18 @@
         </ul>
     </nav>
 
-    <section id="inicio" class="glow-section">
-        <h2>Descubre el Futuro del Viaje en el Tiempo</h2>
-        <p>Explora nuestra innovadora tecnología de viajes temporales, diseñada para romper las barreras del espacio-tiempo y abrir nuevas posibilidades para la humanidad.</p>
-        <div class="time-machine-visual">
-            <div class="machine-core"></div>
-            <div class="machine-ring ring1"></div>
-            <div class="machine-ring ring2"></div>
-            <div class="machine-ring ring3"></div>
+    <section id="branding" class="glow-section">
+        <h2>Diseño y Branding</h2>
+        <div class="flex-container">
+            <div class="brand-image">
+                <div class="logo-display"></div>
+            </div>
+            <div class="text-content">
+                <p>Nuestro logo representa un bucle temporal infinito, simbolizando la capacidad de nuestra tecnología para navegar libremente a través del tiempo. Los colores azul eléctrico y cian representan la energía cuántica que impulsa nuestros dispositivos.</p>
+                <p>El diseño ergonómico de la máquina combina estética futurista con funcionalidad práctica. Cada elemento visual ha sido cuidadosamente seleccionado para transmitir innovación, confiabilidad y el misterio inherente al viaje temporal.</p>
+                <p>Nuestra paleta de colores corporativos incluye tonos de azul profundo, púrpura cósmico y detalles en cian brillante, evocando la vastedad del cosmos y las infinitas posibilidades del viaje en el tiempo.</p>
+            </div>
         </div>
-        <button class="glow-button" onclick="showAlert()">¡Descúbrela ahora!</button>
     </section>
 
     <footer>
@@ -70,22 +72,6 @@
             <p>&copy; 2025-∞ Máquina del Tiempo - Todos los derechos reservados en todas las líneas temporales.</p>
         </div>
     </footer>
-
-    <script>
-        function showAlert() {
-            alert("¡La Máquina del Tiempo está aquí! Prepárate para una experiencia que transformará tu percepción de la realidad.");
-        }
-
-        // Animación para los anillos de la máquina del tiempo
-        document.addEventListener('DOMContentLoaded', function() {
-            const rings = document.querySelectorAll('.machine-ring');
-            rings.forEach((ring, index) => {
-                setTimeout(() => {
-                    ring.classList.add('active');
-                }, index * 500);
-            });
-        });
-    </script>
 </body>
 </html>
 
