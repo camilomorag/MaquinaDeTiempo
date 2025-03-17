@@ -1,11 +1,12 @@
-<!DOCTYPE html>
++<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minijuego - Máquina del Tiempo</title>
+  <title>Minijuegos - Máquina del Tiempo</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="minijuego.css">
+  <link rel="stylesheet" href="linea-temporal.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600&display=swap">
 </head>
 <body>
@@ -28,7 +29,8 @@
           <li><a href="caracteristicas.html">Características</a></li>
           <li><a href="precio.html">Precio</a></li>
           <li><a href="promocion.html">Promoción</a></li>
-          <li><a href="minijuego.html" class="active">Minijuego</a></li>
+          <li><a href="minijuego.html" class="active">Minijuegos</a></li>
+
       </ul>
   </nav>
 
@@ -105,7 +107,6 @@
           <p>Controles:</p>
           <ul>
               <li>Flechas o WASD: Mover al personaje</li>
-              <li>Espacio: Interactuar/Usar objeto</li>
               <li>E: Abrir/cerrar inventario</li>
           </ul>
           <p>Objetivo: Recoger todas las piezas de la máquina del tiempo y repararla antes de que se acabe el tiempo.</p>
@@ -150,6 +151,45 @@
       <div id="adventure-message" class="game-message"></div>
   </section>
 
+  <!-- Nuevo minijuego: Línea Temporal en Peligro -->
+  <section id="linea-temporal" class="glow-section">
+      <h2>Línea Temporal en Peligro</h2>
+      <div class="game-instructions">
+          <p>¡La línea temporal está en peligro! Eventos históricos han sido desplazados de su ubicación correcta, causando anomalías temporales.</p>
+          <p>Tu misión: Arrastra los eventos históricos y ordénalos correctamente en la línea del tiempo para restaurar el flujo temporal.</p>
+      </div>
+
+      <div class="timeline">
+          <div class="drop-zone" data-year="1492">1492</div>
+          <div class="drop-zone" data-year="1687">1687</div>
+          <div class="drop-zone" data-year="1776">1776</div>
+          <div class="drop-zone" data-year="1859">1859</div>
+          <div class="drop-zone" data-year="1903">1903</div>
+          <div class="drop-zone" data-year="1945">1945</div>
+          <div class="drop-zone" data-year="1969">1969</div>
+          <div class="drop-zone" data-year="1989">1989</div>
+          <div class="drop-zone" data-year="2023">2023</div>
+      </div>
+
+      <div class="events">
+          <div class="event" draggable="true" data-year="1969">🚀 Hombre en la Luna</div>
+          <div class="event" draggable="true" data-year="1776">📜 Independencia de EE.UU.</div>
+          <div class="event" draggable="true" data-year="1492">⛵ Descubrimiento de América</div>
+          <div class="event" draggable="true" data-year="2023">🌎 Año Actual</div>
+          <div class="event" draggable="true" data-year="1945">💥 Fin Segunda Guerra Mundial</div>
+          <div class="event" draggable="true" data-year="1903">✈️ Primer Vuelo de Avión</div>
+          <div class="event" draggable="true" data-year="1859">📚 Origen de las Especies</div>
+          <div class="event" draggable="true" data-year="1687">🍎 Leyes de Newton</div>
+          <div class="event" draggable="true" data-year="1989">🧱 Caída del Muro de Berlín</div>
+      </div>
+
+      <div id="timeline-message" class="game-message"></div>
+      
+      <div class="game-controls">
+          <button id="reset-timeline" class="glow-button">Reiniciar Línea Temporal</button>
+      </div>
+  </section>
+
   <footer>
       <div class="footer-content">
           <div class="footer-logo">
@@ -165,12 +205,13 @@
                   <li><a href="precio.html">Precios</a></li>
                   <li><a href="promocion.html">Promoción</a></li>
                   <li><a href="minijuego.html">Minijuego</a></li>
+
               </ul>
           </div>
           <div class="footer-contact">
               <h4>Contacto</h4>
               <p>Sede Central: Zona Temporal 42</p>
-              <p>Email: info@maquinadeltiempo.com</p>
+              <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6a03040c052a070b1b1f03040b0e0f061e030f071a0544090507">[email&#160;protected]</a></p>
               <p>Teléfono Temporal: +∞ 555-TIEMPO</p>
           </div>
       </div>
@@ -179,8 +220,10 @@
       </div>
   </footer>
 
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script src="minijuego.js"></script>
   <script src="aventura-temporal.js"></script>
+  <script src="linea-temporal.js"></script>
 </body>
 </html>
 

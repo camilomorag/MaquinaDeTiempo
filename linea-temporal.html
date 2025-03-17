@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea Temporal en Peligro - Máquina del Tiempo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="linea-temporal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600&display=swap">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <header>
+        <div class="logo">
+            <div class="circle"></div>
+            <h1>Máquina del Tiempo</h1>
+        </div>
+        <p>Viaja al pasado y al futuro con tecnología revolucionaria</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="producto.html">Sobre el producto</a></li>
+            <li><a href="branding.html">Diseño y Branding</a></li>
+            <li><a href="caracteristicas.html">Características</a></li>
+            <li><a href="precio.html">Precio</a></li>
+            <li><a href="promocion.html">Promoción</a></li>
+            <li><a href="minijuego.html">Minijuego</a></li>
+            <li><a href="linea-temporal.html" class="active">Línea Temporal</a></li>
+        </ul>
+    </nav>
+
+    <section id="linea-temporal" class="glow-section">
+        <h2>Línea Temporal en Peligro</h2>
+        <div class="game-instructions">
+            <p>¡La línea temporal está en peligro! Eventos históricos han sido desplazados de su ubicación correcta, causando anomalías temporales.</p>
+            <p>Tu misión: Arrastra los eventos históricos y ordénalos correctamente en la línea del tiempo para restaurar el flujo temporal.</p>
+        </div>
+
+        <div class="timeline">
+            <div class="drop-zone" data-year="1492">1492</div>
+            <div class="drop-zone" data-year="1687">1687</div>
+            <div class="drop-zone" data-year="1776">1776</div>
+            <div class="drop-zone" data-year="1859">1859</div>
+            <div class="drop-zone" data-year="1903">1903</div>
+            <div class="drop-zone" data-year="1945">1945</div>
+            <div class="drop-zone" data-year="1969">1969</div>
+            <div class="drop-zone" data-year="1989">1989</div>
+            <div class="drop-zone" data-year="2023">2023</div>
+        </div>
+
+        <div class="events">
+            <div class="event" draggable="true" data-year="1969">🚀 Hombre en la Luna</div>
+            <div class="event" draggable="true" data-year="1776">📜 Independencia de EE.UU.</div>
+            <div class="event" draggable="true" data-year="1492">⛵ Descubrimiento de América</div>
+            <div class="event" draggable="true" data-year="2023">🌎 Año Actual</div>
+            <div class="event" draggable="true" data-year="1945">💥 Fin Segunda Guerra Mundial</div>
+            <div class="event" draggable="true" data-year="1903">✈️ Primer Vuelo de Avión</div>
+            <div class="event" draggable="true" data-year="1859">📚 Origen de las Especies</div>
+            <div class="event" draggable="true" data-year="1687">🍎 Leyes de Newton</div>
+            <div class="event" draggable="true" data-year="1989">🧱 Caída del Muro de Berlín</div>
+        </div>
+
+        <div id="message"></div>
+        
+        <div class="game-controls">
+            <button id="reset-timeline" class="glow-button">Reiniciar Línea Temporal</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="mini-circle"></div>
+                <h3>Máquina del Tiempo</h3>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="producto.html">Producto</a></li>
+                    <li><a href="caracteristicas.html">Características</a></li>
+                    <li><a href="precio.html">Precios</a></li>
+                    <li><a href="promocion.html">Promoción</a></li>
+                    <li><a href="minijuego.html">Minijuego</a></li>
+                    <li><a href="linea-temporal.html">Línea Temporal</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p>Sede Central: Zona Temporal 42</p>
+                <p>Email: info@maquinadeltiempo.com</p>
+                <p>Teléfono Temporal: +∞ 555-TIEMPO</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025-∞ Máquina del Tiempo - Todos los derechos reservados en todas las líneas temporales.</p>
+        </div>
+    </footer>
+
+    <script src="linea-temporal.js"></script>
+</body>
+</html>
+
