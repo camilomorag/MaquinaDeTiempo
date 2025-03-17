@@ -1,132 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minijuego - Máquina del Tiempo</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="minijuego.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minijuego - Máquina del Tiempo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="minijuego.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500;600&display=swap">
 </head>
 <body>
-    <div class="stars"></div>
-    <div class="twinkling"></div>
-    
-    <header>
-        <div class="logo">
-            <div class="circle"></div>
-            <h1>Máquina del Tiempo</h1>
-        </div>
-        <p>Viaja al pasado y al futuro con tecnología revolucionaria</p>
-    </header>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  
+  <header>
+      <div class="logo">
+          <div class="circle"></div>
+          <h1>Máquina del Tiempo</h1>
+      </div>
+      <p>Viaja al pasado y al futuro con tecnología revolucionaria</p>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="producto.html">Sobre el producto</a></li>
-            <li><a href="branding.html">Diseño y Branding</a></li>
-            <li><a href="caracteristicas.html">Características</a></li>
-            <li><a href="precio.html">Precio</a></li>
-            <li><a href="promocion.html">Promoción</a></li>
-            <li><a href="minijuego.html" class="active">Minijuego</a></li>
-        </ul>
-    </nav>
+  <nav>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="producto.html">Sobre el producto</a></li>
+          <li><a href="branding.html">Diseño y Branding</a></li>
+          <li><a href="caracteristicas.html">Características</a></li>
+          <li><a href="precio.html">Precio</a></li>
+          <li><a href="promocion.html">Promoción</a></li>
+          <li><a href="minijuego.html" class="active">Minijuego</a></li>
+      </ul>
+  </nav>
 
-    <section id="minijuego" class="glow-section">
-        <h2>Desafío Temporal</h2>
-        <div class="game-instructions">
-            <p>¡La máquina del tiempo está atrayendo alienígenas de otras dimensiones! Debes activar los controles temporales para estabilizar la máquina.</p>
-            <p>Consigue 500 puntos para completar la estabilización y activar la máquina del tiempo.</p>
-            <ul>
-                <li>Botones verdes: +25 puntos</li>
-                <li>Botones con alienígenas: -15 puntos</li>
-            </ul>
-            <p>¡Tienes 60 segundos para estabilizar la máquina! Debes ser rápido y preciso.</p>
-        </div>
-        
-        <div class="game-container">
-            <div class="game-stats">
-                <div class="stat">
-                    <span>Puntuación:</span>
-                    <span id="score">0</span>
-                </div>
-                <div class="stat">
-                    <span>Tiempo:</span>
-                    <span id="time">60</span>
-                </div>
-                <div class="stat">
-                    <span>Objetivo:</span>
-                    <span>500</span>
-                </div>
-            </div>
-            
-            <div class="game-area">
-                <div class="grid-container">
-                    <div class="grid-row">
-                        <div class="grid-cell" data-index="0"></div>
-                        <div class="grid-cell" data-index="1"></div>
-                        <div class="grid-cell" data-index="2"></div>
-                        <div class="grid-cell" data-index="3"></div>
-                    </div>
-                    <div class="grid-row">
-                        <div class="grid-cell" data-index="4"></div>
-                        <div class="grid-cell" data-index="5"></div>
-                        <div class="grid-cell" data-index="6"></div>
-                        <div class="grid-cell" data-index="7"></div>
-                    </div>
-                    <div class="grid-row">
-                        <div class="grid-cell" data-index="8"></div>
-                        <div class="grid-cell" data-index="9"></div>
-                        <div class="grid-cell" data-index="10"></div>
-                        <div class="grid-cell" data-index="11"></div>
-                    </div>
-                    <div class="grid-row">
-                        <div class="grid-cell" data-index="12"></div>
-                        <div class="grid-cell" data-index="13"></div>
-                        <div class="grid-cell" data-index="14"></div>
-                        <div class="grid-cell" data-index="15"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="game-controls">
-                <button id="start-game" class="glow-button">Iniciar Desafío</button>
-                <button id="reset-game" class="glow-button" disabled>Reintentar</button>
-            </div>
-        </div>
-        
-        <div id="game-message" class="game-message"></div>
-    </section>
+  <section id="minijuego-alien" class="glow-section">
+      <h2>Desafío Temporal</h2>
+      <div class="game-instructions">
+          <p>¡La máquina del tiempo está atrayendo alienígenas de otras dimensiones! Debes activar los controles temporales para estabilizar la máquina.</p>
+          <p>Consigue 500 puntos para completar la estabilización y activar la máquina del tiempo.</p>
+          <ul>
+              <li>Botones verdes: +25 puntos</li>
+              <li>Botones con alienígenas: -15 puntos</li>
+          </ul>
+          <p>¡Tienes 60 segundos para estabilizar la máquina! Debes ser rápido y preciso.</p>
+      </div>
+      
+      <div class="game-container">
+          <div class="game-stats">
+              <div class="stat">
+                  <span>Puntuación:</span>
+                  <span id="alien-score">0</span>
+              </div>
+              <div class="stat">
+                  <span>Tiempo:</span>
+                  <span id="alien-time">60</span>
+              </div>
+              <div class="stat">
+                  <span>Objetivo:</span>
+                  <span>500</span>
+              </div>
+          </div>
+          
+          <div class="game-area">
+              <div class="grid-container">
+                  <div class="grid-row">
+                      <div class="grid-cell" data-index="0"></div>
+                      <div class="grid-cell" data-index="1"></div>
+                      <div class="grid-cell" data-index="2"></div>
+                      <div class="grid-cell" data-index="3"></div>
+                  </div>
+                  <div class="grid-row">
+                      <div class="grid-cell" data-index="4"></div>
+                      <div class="grid-cell" data-index="5"></div>
+                      <div class="grid-cell" data-index="6"></div>
+                      <div class="grid-cell" data-index="7"></div>
+                  </div>
+                  <div class="grid-row">
+                      <div class="grid-cell" data-index="8"></div>
+                      <div class="grid-cell" data-index="9"></div>
+                      <div class="grid-cell" data-index="10"></div>
+                      <div class="grid-cell" data-index="11"></div>
+                  </div>
+                  <div class="grid-row">
+                      <div class="grid-cell" data-index="12"></div>
+                      <div class="grid-cell" data-index="13"></div>
+                      <div class="grid-cell" data-index="14"></div>
+                      <div class="grid-cell" data-index="15"></div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="game-controls">
+              <button id="start-alien-game" class="glow-button">Iniciar Desafío</button>
+              <button id="reset-alien-game" class="glow-button" disabled>Reintentar</button>
+          </div>
+      </div>
+      
+      <div id="alien-game-message" class="game-message"></div>
+  </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <div class="mini-circle"></div>
-                <h3>Máquina del Tiempo</h3>
-            </div>
-            <div class="footer-links">
-                <h4>Enlaces</h4>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="producto.html">Producto</a></li>
-                    <li><a href="caracteristicas.html">Características</a></li>
-                    <li><a href="precio.html">Precios</a></li>
-                    <li><a href="minijuego.html">Minijuego</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Contacto</h4>
-                <p>Sede Central: Zona Temporal 42</p>
-                <p>Email: info@maquinadeltiempo.com</p>
-                <p>Teléfono Temporal: +∞ 555-TIEMPO</p>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025-∞ Máquina del Tiempo - Todos los derechos reservados en todas las líneas temporales.</p>
-        </div>
-    </footer>
+  <section id="aventura-temporal" class="glow-section">
+      <h2>Aventura Temporal</h2>
+      <div class="game-instructions">
+          <p>¡La máquina del tiempo se ha averiado y sus componentes se han dispersado por diferentes épocas! Debes recoger las piezas y repararla antes de que el tiempo se agote.</p>
+          <p>Controles:</p>
+          <ul>
+              <li>Flechas o WASD: Mover al personaje</li>
+              <li>Espacio: Interactuar/Usar objeto</li>
+              <li>E: Abrir/cerrar inventario</li>
+          </ul>
+          <p>Objetivo: Recoger todas las piezas de la máquina del tiempo y repararla antes de que se acabe el tiempo.</p>
+      </div>
+      
+      <div class="game-container">
+          <div class="game-stats">
+              <div class="stat">
+                  <span>Tiempo:</span>
+                  <span id="adventure-time">120</span>
+              </div>
+              <div class="stat">
+                  <span>Piezas:</span>
+                  <span id="parts-collected">0/5</span>
+              </div>
+              <div class="stat">
+                  <span>Época:</span>
+                  <span id="current-era">Presente</span>
+              </div>
+          </div>
+          
+          <div class="adventure-game-area">
+              <canvas id="game-canvas" width="800" height="480" style="background-color: #1E3F66; display: block; margin: 0 auto;"></canvas>
+              <div id="inventory" class="inventory">
+                  <div class="inventory-title">Inventario</div>
+                  <div class="inventory-slots">
+                      <div class="inventory-slot" data-slot="0"></div>
+                      <div class="inventory-slot" data-slot="1"></div>
+                      <div class="inventory-slot" data-slot="2"></div>
+                      <div class="inventory-slot" data-slot="3"></div>
+                      <div class="inventory-slot" data-slot="4"></div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="game-controls">
+              <button id="start-adventure" class="glow-button">Iniciar Aventura</button>
+              <button id="reset-adventure" class="glow-button" disabled>Reintentar</button>
+          </div>
+      </div>
+      
+      <div id="adventure-message" class="game-message"></div>
+  </section>
 
-    <script src="minijuego.js"></script>
+  <footer>
+      <div class="footer-content">
+          <div class="footer-logo">
+              <div class="mini-circle"></div>
+              <h3>Máquina del Tiempo</h3>
+          </div>
+          <div class="footer-links">
+              <h4>Enlaces</h4>
+              <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="producto.html">Producto</a></li>
+                  <li><a href="caracteristicas.html">Características</a></li>
+                  <li><a href="precio.html">Precios</a></li>
+                  <li><a href="promocion.html">Promoción</a></li>
+                  <li><a href="minijuego.html">Minijuego</a></li>
+              </ul>
+          </div>
+          <div class="footer-contact">
+              <h4>Contacto</h4>
+              <p>Sede Central: Zona Temporal 42</p>
+              <p>Email: info@maquinadeltiempo.com</p>
+              <p>Teléfono Temporal: +∞ 555-TIEMPO</p>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>&copy; 2025-∞ Máquina del Tiempo - Todos los derechos reservados en todas las líneas temporales.</p>
+      </div>
+  </footer>
+
+  <script src="minijuego.js"></script>
+  <script src="aventura-temporal.js"></script>
 </body>
 </html>
 

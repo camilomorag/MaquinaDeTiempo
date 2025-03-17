@@ -769,3 +769,13 @@ footer {
   border-radius: 15px;
 }
 
+/* Estilo para el logo personalizado */
+.custom-logo {
+  max-width: 315px; /* Aumentado de 150px a 250px */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.5);
+}
+
